@@ -1,0 +1,12 @@
+numpy>=1.17.0
+torch>=1.7.0
+torchaudio>=0.7.0
+soundfile>=0.10.3
+librosa>=0.8.0
+scipy>=1.5.0
+scikit-learn>=0.24.0
+tqdm>=4.46.0
+PyYAML>=5.3.1
+pandas>=1.1.5
+matplotlib>=3.3.3
+requests>=2.25.0 

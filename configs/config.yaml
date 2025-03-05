@@ -1,0 +1,32 @@
+# 全局配置
+data:
+  raw_audio_dir: "data/raw"
+  features_dir: "data/features"
+  annotations_dir: "data/annotations"
+  sample_rate: 16000
+  
+# 特征提取配置
+feature_extraction:
+  window_size: 25  # ms
+  hop_size: 10     # ms
+  mel_bins: 80
+  normalize: true
+
+# 模型配置
+model:
+  name: "ecapa-tdnn"
+  pretrained_path: "models/pretrained/ecapa-tdnn.pth"
+  embedding_dim: 192
+
+# 说话人标注配置
+annotation:
+  min_segment_duration: 1.0  # 秒
+  max_segment_duration: 10.0 # 秒
+  overlap: 0.5              # 秒
+
+# 说话人识别配置
+recognition:
+  threshold: 0.7            # 相似度阈值
+  max_speakers: 100         # 最大说话人数
+  use_clustering: true      # 是否使用聚类
+  clustering_method: "kmeans" 
