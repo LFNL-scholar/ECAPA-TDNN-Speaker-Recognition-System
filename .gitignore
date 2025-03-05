@@ -1,0 +1,41 @@
+# 预训练模型和数据文件
+models/pretrained/*
+data/features/*
+data/annotations/*
+data/raw/*
+!data/raw/.gitkeep
+!data/features/.gitkeep
+!data/annotations/.gitkeep
+!models/pretrained/.gitkeep
+
+# Python虚拟环境
+venv/
+env/
+.env/
+
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+
+# 分发/打包
+dist/
+build/
+*.egg-info/
+
+# IDE配置
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+tmp/
+temp/ 
